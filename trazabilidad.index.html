@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Registro de Cargue - Unidad de Transporte</title>
+  <style>
+    body { font-family: Arial, sans-serif; background: #f4f4f4; padding: 20px; }
+    form { background: #fff; padding: 20px; border-radius: 10px; max-width: 600px; margin: auto; box-shadow: 0 0 10px rgba(0,0,0,0.1); }
+    h2 { text-align: center; }
+    label { display: block; margin-top: 15px; }
+    input, textarea { width: 100%; padding: 8px; margin-top: 5px; border-radius: 5px; border: 1px solid #ccc; }
+    button { margin-top: 20px; background-color: #28a745; color: #fff; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; }
+    button:hover { background-color: #218838; }
+  </style>
+</head>
+<body>
+  <form action="https://formsubmit.co/formularioslec@gmail.com" method="POST" enctype="multipart/form-data">
+    <h2>Registro del Proceso de Cargue</h2>
+
+    <label for="fecha">Fecha:</label>
+    <input type="date" id="fecha" name="Fecha" required>
+
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="Nombre completo" required>
+
+    <label for="placa">Placa del vehículo:</label>
+    <input type="text" id="placa" name="Placa del vehículo" required>
+
+    <label for="manifiesto">Número del manifiesto:</label>
+    <input type="text" id="manifiesto" name="Número del manifiesto" required>
+
+    <label for="foto_antes">Foto antes del cargue:</label>
+    <input type="file" id="foto_antes" name="Foto antes del cargue" accept="image/*" required>
+
+    <label for="foto_durante">Foto durante el cargue:</label>
+    <input type="file" id="foto_durante" name="Foto durante el cargue" accept="image/*" required>
+
+    <label for="foto_despues">Foto después del cargue:</label>
+    <input type="file" id="foto_despues" name="Foto después del cargue" accept="image/*" required>
+
+    <label>
+      <input type="checkbox" name="Declaración de aceptación" required>
+      Declaro que conozco los riesgos de transportar carga y doy fe de que no estoy transportando mercancías no permitidas.
+    </label>
+
+    <button type="submit">Enviar Registro</button>
+  </form>
+</body>
+</html>
